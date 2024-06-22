@@ -12,9 +12,6 @@ This is a C library. The mandatory part includes string manipulation, memory man
 
 The "project" folder contains the files at the time of evaluation. The "libft" folder is an updated version that contains other projects as a part of the library, and might contain any other useful function.  
 
-- Tested by Moulinette (125/100)
-- Tested by [Francinette](https://github.com/xicodomingues/francinette) (All OK)
-
 # Building
 
 By cloning the repository and using [GNU Make](https://www.gnu.org/software/make/).
