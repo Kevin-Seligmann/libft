@@ -6,7 +6,7 @@
 /*   By: kseligma <kseligma@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/12 22:35:32 by kseligma          #+#    #+#             */
-/*   Updated: 2024/02/17 16:03:24 by kseligma         ###   ########.fr       */
+/*   Updated: 2024/06/22 10:50:10 by kseligma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,8 @@
 # include <stdlib.h>
 # include <stdarg.h>
 # include <unistd.h>
-# include "largest_increasing_sublist.h"
+# include "ft_printf.h"
+# include "get_next_line.h"
 
 int		ft_isalpha(int c);
 int		ft_isdigit(int c);
