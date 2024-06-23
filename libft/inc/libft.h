@@ -6,7 +6,7 @@
 /*   By: kseligma <kseligma@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/12 22:35:32 by kseligma          #+#    #+#             */
-/*   Updated: 2024/06/22 10:50:10 by kseligma         ###   ########.fr       */
+/*   Updated: 2024/06/23 17:39:13 by kseligma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@
 # include <stdlib.h>
 # include <stdarg.h>
 # include <unistd.h>
+# include <limits.h>
 # include "ft_printf.h"
 # include "get_next_line.h"
 

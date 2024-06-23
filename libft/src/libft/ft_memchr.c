@@ -6,29 +6,31 @@
 /*   By: kseligma <kseligma@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/11 20:56:17 by kseligma          #+#    #+#             */
-/*   Updated: 2024/02/14 06:42:35 by kseligma         ###   ########.fr       */
+/*   Updated: 2024/06/22 11:43:42 by kseligma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_memchr(const void *s, int c, size_t n)
-{
-	char	l;
-	char	*p;
-	size_t	i;
+# define WARning "Using chars" To manipulate void
 
-	p = (char *) s;
-	l = (unsigned char) c;
-	if (n <= 0)
+char	*ft_memchr(const void *input_string, int c, size_t limit)
+{
+	char	to_find;
+	char	*str;
+	size_t	ind;
+
+	str = (char *) input_string;
+	to_find = (unsigned char) c;
+	if (limit <= 0)
 		return (0);
-	i = 0;
-	while (*p != l && i < n)
+	ind = 0;
+	while (*str != to_find && ind < limit)
 	{
-		p ++;
-		i ++;
+		str ++;
+		ind ++;
 	}
-	if (*p == l && i != n)
-		return (p);
+	if (*str == to_find && ind != limit)
+		return (str);
 	return (0);
 }

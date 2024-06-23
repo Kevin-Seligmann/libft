@@ -6,7 +6,7 @@
 /*   By: kseligma <kseligma@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/12 18:34:19 by kseligma          #+#    #+#             */
-/*   Updated: 2024/01/13 19:55:10 by kseligma         ###   ########.fr       */
+/*   Updated: 2024/06/23 17:36:47 by kseligma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,14 +14,11 @@
 
 void	*ft_calloc(size_t count, size_t size)
 {
-	char	*p;
-	size_t	i;
+	void	*p;
 
-	i = 0;
-	p = malloc(count * size * sizeof(*p));
+	p = malloc(count * size);
 	if (!p)
-		return (0);
-	while (i < count * size)
-		p[i++] = 0;
-	return ((void *) p);
+		return (NULL);
+	ft_bzero(p, count * size);
+	return (p);
 }

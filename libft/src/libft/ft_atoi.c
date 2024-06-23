@@ -6,29 +6,30 @@
 /*   By: kseligma <kseligma@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/12 18:01:31 by kseligma          #+#    #+#             */
-/*   Updated: 2024/01/16 20:02:50 by kseligma         ###   ########.fr       */
+/*   Updated: 2024/06/22 11:23:33 by kseligma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+/* Spaces defined by isspace(3) (From 9 to 13 ASCII and ' ') */
 int	ft_atoi(const char *str)
 {
 	char	*s;
-	int		i_sign;
-	int		i_res;
+	int		sign;
+	int		result;
 
-	i_sign = 1;
-	i_res = 0;
+	sign = 1;
+	result = 0;
 	s = (char *) str;
 	while ((*s >= 9 && *s <= 13) || *s == ' ')
 		s ++;
 	if (*s == '-')
-		i_sign *= -1;
+		sign *= -1;
 	if (*s == '-' || *s == '+')
 		s ++;
 	while (*s >= '0' && *s <= '9')
 	{
-		i_res = i_res * 10 + i_sign * (*s - 48);
+		result = result * 10 + sign * (*s - 48);
 		s++;
 	}
-	return (i_res);
+	return (result);
 }
