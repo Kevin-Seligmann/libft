@@ -28,5 +28,5 @@ The original project was written for Mac and works for Debian and Ubuntu. The up
 
 ## Score/Testing
 
- - Evaluation (125/100)
+ - Evaluation (125/125)
  - [Francinette](https://github.com/xicodomingues/francinette) (All OK)
