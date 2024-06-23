@@ -14,15 +14,7 @@ By cloning the repository and using [GNU Make](https://www.gnu.org/software/make
 
 The original project was written for Mac and works for Debian and Ubuntu. The updated version might work only on Debian and Ubuntu.
 
-## More 42 projects
-
-- ft_printf - A small implementation of "printf".
-- Born2beroot - An introduction to virtual machines, Linux and web servers.
-- get_next_line - To read lines from a file, one by one.
-- pipex - Small implementation of Bash pipes.
-- push_swap - Ordering two "stacks" on the least amount of moves .
-- FdF - Parse a map to create a wireframe model. Introduction to computer graphics.
-- minishell - A small 'mini' CLI shell based on Bash.
+## 42
 
 [42](https://www.42network.org/about-us/) Is a programming school that teaches in an innovative way, focused on an strict model of peer to peer evaluation and self learning via the writting of, mostly, coding projects.
 
