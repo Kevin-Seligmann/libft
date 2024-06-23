@@ -14,7 +14,7 @@ By cloning the repository and using [GNU Make](https://www.gnu.org/software/make
 
 The original project was written for Mac and works for Debian and Ubuntu. The updated version might work only on Debian and Ubuntu.
 
-# More 42 projects
+## More 42 projects
 
 - ft_printf - A small implementation of "printf".
 - Born2beroot - An introduction to virtual machines, Linux and web servers.
