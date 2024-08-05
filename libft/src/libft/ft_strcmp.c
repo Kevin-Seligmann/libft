@@ -1,34 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memchr.c                                        :+:      :+:    :+:   */
+/*   ft_strcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: kseligma <kseligma@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/01/11 20:56:17 by kseligma          #+#    #+#             */
-/*   Updated: 2024/08/05 17:24:11 by kseligma         ###   ########.fr       */
+/*   Created: 2024/07/02 12:45:54 by kseligma          #+#    #+#             */
+/*   Updated: 2024/08/05 17:23:56 by kseligma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
-char	*ft_memchr(const void *input_string, int c, size_t limit)
+int	ft_strcmp(char *s1, char *s2)
 {
-	char	to_find;
-	char	*str;
-	size_t	ind;
+	int	i;
 
-	str = (char *) input_string;
-	to_find = (unsigned char) c;
-	if (limit <= 0)
-		return (0);
-	ind = 0;
-	while (*str != to_find && ind < limit)
-	{
-		str ++;
-		ind ++;
-	}
-	if (*str == to_find && ind != limit)
-		return (str);
-	return (0);
+	i = 0;
+	while (s1[i] == s2[i] && s1[i] != '\0' && s2[i] != '\0')
+		i++;
+	return (s1[i] - s2[i]);
 }

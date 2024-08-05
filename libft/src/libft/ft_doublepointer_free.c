@@ -1,34 +1,43 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memchr.c                                        :+:      :+:    :+:   */
+/*   fr_doublepointer_free.c                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: kseligma <kseligma@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/01/11 20:56:17 by kseligma          #+#    #+#             */
-/*   Updated: 2024/08/05 17:24:11 by kseligma         ###   ########.fr       */
+/*   Created: 2024/07/28 12:10:14 by kseligma          #+#    #+#             */
+/*   Updated: 2024/07/28 12:10:44 by kseligma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_memchr(const void *input_string, int c, size_t limit)
+void	ft_arr_free(char **arr)
 {
-	char	to_find;
-	char	*str;
-	size_t	ind;
+	int	ind;
 
-	str = (char *) input_string;
-	to_find = (unsigned char) c;
-	if (limit <= 0)
-		return (0);
+	if (!arr)
+		return ;
 	ind = 0;
-	while (*str != to_find && ind < limit)
+	while (arr[ind])
 	{
-		str ++;
+		free(arr[ind]);
 		ind ++;
 	}
-	if (*str == to_find && ind != limit)
-		return (str);
-	return (0);
+	free(arr);
+}
+
+void	ft_arr_free_int(int **arr)
+{
+	int	ind;
+
+	if (!arr)
+		return ;
+	ind = 0;
+	while (arr[ind])
+	{
+		free(arr[ind]);
+		ind ++;
+	}
+	free(arr);
 }
