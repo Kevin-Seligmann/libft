@@ -1,6 +1,6 @@
 # libft
 
-This is a C library. Includes functions for string manipulation, memory management, file descriptor writting, and a linked list implementation. More details can be found in the subject PDF.
+This is a C library. Includes functions for string manipulation, memory management, file descriptor writting, and a linked list implementation. More details can be found in the libft PDF.
 
 The "project" folder contains the files at the time of evaluation. The "libft" folder is an updated version.  
 
